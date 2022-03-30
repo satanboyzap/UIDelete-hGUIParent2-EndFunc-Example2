@@ -1,0 +1,2 @@
+# UIDelete-hGUIParent2-EndFunc-Example2
+While 1 ; Loop until the user exits.         Sleep(100)         If $iExitLoop Then ExitLoop     WEnd     $iExitLoop = 0     GUIDelete($hGUIParent2) EndFunc   ;==>Example2   Func OnEvent_CLOSE_ONE()     ConsoleWrite('- Func OnEvent_CLOSE_ONE()' &amp; @CRLF)     $iExitLoop = 1 EndFunc   ;==>OnEvent_CLOSE_ONE  Func OnEvent_CLOSE_TWO()     ConsoleWrite('- Func OnEvent_CLOSE_TWO()' &amp; @CRLF)     $iExitLoop = 1
